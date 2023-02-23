@@ -15,5 +15,8 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     this.drawer.open();
   }
+  toggle(){
+    this.drawer.toggle();
+  }
 
 }
