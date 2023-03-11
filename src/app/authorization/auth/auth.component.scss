@@ -1,0 +1,63 @@
+// Full screen Video
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+} 
+// Full screen video 
+
+.auth-box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .example {
+    &-card {
+      max-width: 400px;
+    }
+    &-form {
+      min-width: 150px;
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    &-full-width {
+      width: 100%;
+    }
+  }
+  .action-btns {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 10px;
+    margin-bottom: 10px;
+  }
+}

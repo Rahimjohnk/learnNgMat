@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatDrawer } from '@angular/material/sidenav';
+import { Component } from '@angular/core';
 
 /** @title drawer with custom escape and backdrop click behavior */
 @Component({
@@ -7,16 +6,6 @@ import { MatDrawer } from '@angular/material/sidenav';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
-  @ViewChild('drawer', { static: true }) public drawer!: MatDrawer;
-  title = 'learnNgMat';
-  showFiller = true;
-
-  ngOnInit() {
-    this.drawer.open();
-  }
-  toggle(){
-    this.drawer.toggle();
-  }
+export class AppComponent{
 
 }

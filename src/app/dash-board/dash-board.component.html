@@ -1,0 +1,84 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+    (click)="toggle()">
+      <mat-icon>
+        menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+  
+  <mat-drawer-container class="example-container" autosize>
+      <mat-drawer #drawer class="example-sidenav" mode="side">
+        <!-- <p>Auto-resizing sidenav</p>
+        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+          Toggle extra text
+        </button> -->
+        <!-- <h1>Rahim</h1>
+  <button mat-button color="accent">Accent</button>
+  <button mat-raised-button color="accent">Accent</button> -->
+  <mat-list>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>explore</mat-icon></span>
+      <span matListItemTitle>Explore</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>extension</mat-icon></span>
+      <span matListItemTitle>Extension</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>location_on</mat-icon></span>
+      <span matListItemTitle>Location</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>mic</mat-icon></span>
+      <span matListItemTitle>Mic</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>bluetooth_connected</mat-icon></span>
+      <span matListItemTitle>Bluetooth connectivity</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>brightness_high</mat-icon></span>
+      <span matListItemTitle>Brightness</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>explore</mat-icon></span>
+      <span matListItemTitle>Explore</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>extension</mat-icon></span>
+      <span matListItemTitle>Extension</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>location_on</mat-icon></span>
+      <span matListItemTitle>Location</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>mic</mat-icon></span>
+      <span matListItemTitle>Mic</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>bluetooth_connected</mat-icon></span>
+      <span matListItemTitle>Bluetooth connectivity</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemIcon> <mat-icon>brightness_high</mat-icon></span>
+      <span matListItemTitle>Brightness</span>
+    </mat-list-item>
+  </mat-list>
+      </mat-drawer>
+    
+      <div class="example-sidenav-content">
+        
+  
+      </div>
+    
+    </mat-drawer-container>
