@@ -1,5 +1,6 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
+import { AuthService } from '../authorization/services/auth.service';
 
 @Component({
   selector: 'app-dash-board',
@@ -11,10 +12,17 @@ export class DashBoardComponent implements OnInit {
   title = 'learnNgMat';
   showFiller = true;
 
+  constructor(private authService: AuthService){
+
+  }
+
   ngOnInit() {
     this.drawer.open();
   }
   toggle() {
     this.drawer.toggle();
+  }
+  onLogout(){
+    this.authService.logout();
   }
 }
