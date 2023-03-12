@@ -8,7 +8,7 @@ import { DashBoardComponent } from './dash-board/dash-board.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/auth',
+    redirectTo: '/dashBoard',
     pathMatch: 'full',
   },
   {

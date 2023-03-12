@@ -29,7 +29,7 @@ export class AuthComponent {
 
     let authObs: Observable<AuthResponseData>;
 
-    // this.isLoading = true;
+    this.isLoading = true;
 
     if (this.isLoginMode) {
       authObs = this.authService.login(email, password);
@@ -41,6 +41,7 @@ export class AuthComponent {
       resData => {
         if(resData){
           this.isLoading = false;
+          form.reset();
           this.router.navigate(['/dashBoard']);
         }
       },
@@ -49,7 +50,5 @@ export class AuthComponent {
         this.isLoading = false;
       }
     );
-
-    form.reset();
   }
 }
